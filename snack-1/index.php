@@ -47,7 +47,7 @@ Olimpia Milano - Cantù | 55-60 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basketball Matches</title>
+    <title>PHP Snack 1</title>
 </head>
 <body>
     <ul>
