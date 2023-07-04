@@ -13,7 +13,6 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
                 array_push($resultsArray, $i);
             }
         }
-
         return $resultsArray;
     }
 ?>
@@ -27,7 +26,14 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 </head>
 <body>
     <p>
-        <?php var_dump(printValuesBetweenNumbers($results, $start, $end)) ?>
+        <?php
+            if ($start < $end) {
+                var_dump(printValuesBetweenNumbers($results, $start, $end));
+            } else {
+        ?>      <p>The first number cannot be higher than the second one.</p>
+        <?php
+            }
+        ?>
     </p>
 </body>
 </html>
