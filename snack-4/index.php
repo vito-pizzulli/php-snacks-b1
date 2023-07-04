@@ -4,15 +4,17 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 
 <?php
     $results = [];
-    $start = 1;
-    $end = 5;
+    $start = 5;
+    $end = 10;
 
     function printValuesBetweenNumbers($resultsArray, $firstNumber, $secondNumber) {
         if ($firstNumber < $secondNumber) {
-            for ($i = $firstNumber; $i = $secondNumber; $i++) {
+            for ($i = $firstNumber; $i <= $secondNumber; $i++) {
                 array_push($resultsArray, $i);
             }
         }
+
+        return $resultsArray;
     }
 ?>
 
