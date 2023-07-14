@@ -33,7 +33,8 @@ su schermo le differenze. -->
         }
     }
 
+    $indumento = new Indumento("Cotone");
     $scarpa = new Scarpa("Pelle", 43);
     $cappello = new Cappello("Tela", 58);
-    var_dump($scarpa, $cappello);
+    var_dump($indumento, $scarpa, $cappello);
 ?>
